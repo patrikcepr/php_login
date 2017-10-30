@@ -8,6 +8,7 @@
 
     //Include classes DB File
     include_once "classes/DB.php";
+    include_once "classes/filter.php";
 
     $con = DB::getConnection();
     // include_once "database.php";
