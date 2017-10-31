@@ -3,6 +3,7 @@
     define('__CONFIG__', true);
     //Require the config
     require_once 'assets/includes/config.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="cs">

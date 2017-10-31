@@ -1,5 +1,5 @@
 $(document)
-.on('submit', 'form.js-register', function(event) {
+.on('submit', 'form.js-register, form.js-login', function(event) {
     event.preventDefault();
 
     var _form = $(this);
@@ -33,7 +33,7 @@ $(document)
         if(data.redirect !== undefined) {
           window.location = data.redirect;
         } else if(data.error !== undefined) {
-          _error.text(data.error).show();
+          _error.html(data.error).show();
         }
     })
     .fail(function ajaxFailed(e) {
@@ -81,7 +81,7 @@ $(document)
         if(data.redirect !== undefined) {
           window.location = data.redirect;
         } else if(data.error !== undefined) {
-          _error.text(data.error).show();
+          _error.html(data.error).show();
         }
     })
     .fail(function ajaxFailed(e) {
